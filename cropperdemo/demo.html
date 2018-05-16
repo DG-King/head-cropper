@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>H5开发</title>
+	<link rel="stylesheet" href="css/cropper.css">
+	<script src="js/jquery-1.11.3.min.js"></script>
+	<script src="js/cropper.min.js"></script>
+	<script src="js/cropperMain.js"></script>
+	<style>
+		.container {
+			width: 300px;
+			height: 300px;
+		}
+		.container img {
+			max-width: 100%;
+		}
+		.prew {
+			overflow: hidden;
+			width: 100px;
+			height: 100px;
+			margin: 50px 0;
+			border: 1px solid #ccc;
+		}
+		.img2 {
+			width: 50px;
+			height: 50px;
+			border-radius: 50%;
+		}
+	</style>
+</head>
+<body>
+	<input type="file" name="" value="选择文件" id="choseFile" accept="image/png,image/jpeg">
+	<div class="container">
+	    <img id="image" src="/static/images/1.jpg">
+	</div>
+	<input type="button" name="" value="放大" id="zoomIn">
+	<input type="button" name="" value="缩小" id="zoomOut">
+	<input type="button" name="" value="旋转" id="rotate">
+	<input type="button" name="" value="还原" id="reset">
+	<input type="button" name="" value="裁剪" id="clip">
+	<input type="button" name="" value="上传" id="inputFile">
+	<div class="prew img1"></div>
+	<div class="prew img2"></div>
+</body>
+</html>
